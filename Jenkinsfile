@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('SCM Checkout'){
                              steps{
-                               git branch: 'main', url: 'https://github.com/satya918/student_app.git'
+                               git branch: 'master-1', url: 'https://github.com/satya918/student_app.git'
                                   }
                             } 
         stage('Build'){
