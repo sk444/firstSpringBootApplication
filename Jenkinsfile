@@ -16,7 +16,7 @@ pipeline{
                         } 
     stage ('Deploy to tomcat server'){
                         steps{
-                deploy adapters: [tomcat9(credentialsId: 'tomcatcreds', path: '', url: 'http://13.53.36.13:9092/')], contextPath: '', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'tomcatcreds', path: '', url: 'http://13.53.36.13:9092/')], contextPath: '/firstSpringBootApplication-0.0.1-SNAPSHOT', war: '**/*.war'
             }
         }
     }
